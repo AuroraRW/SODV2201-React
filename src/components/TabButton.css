@@ -5,3 +5,7 @@ button{
 button:hover{
     background-color: white;
 }
+.active{
+    background-color: white;
+    color: blueviolet;
+}
