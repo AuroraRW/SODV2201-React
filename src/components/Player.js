@@ -10,6 +10,8 @@ function Player(){
     return (
         <section style={{textAlign:'center'}}>
             <h2>Welcome {enteredName?enteredName:'unknown'}</h2>
+            {/* <h2>Welcome {playerName.current.value? playerName.current.value: 'unknown'}</h2> */}
+            {/* <h2>Welcome {playerName.current? playerName.current.value: 'unknown'}</h2> */}
             <input ref={playerName} type="text"/>
             <button onClick={handleClick}>Set Name</button>
         </section>
