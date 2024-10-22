@@ -1,24 +1,21 @@
-import logo from './logo.svg';
+import {useState} from 'react'
 import './App.css';
-
+import Page from './components/Page'
+import { ThemeContextProvider } from './components/ThemeContextProvider';
 function App() {
+  // const [theme, setTheme] = useState('light')
+  // const toggleTheme=()=>{
+  //   if(theme==='light'){
+  //     setTheme('dark')
+  //   }else{
+  //     setTheme('light')
+  //   }
+  // }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // <Page theme={theme} toggleTheme={toggleTheme}/>
+    <ThemeContextProvider>
+      <Page />
+    </ThemeContextProvider>
   );
 }
 
